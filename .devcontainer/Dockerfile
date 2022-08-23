@@ -34,7 +34,7 @@ RUN apt-get -y update --no-install-recommends \
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
 
-RUN echo "codespace ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/codespace
+RUN echo "vscode ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/vscode
 
 ENV DEBIAN_FRONTEND=dialog
 
