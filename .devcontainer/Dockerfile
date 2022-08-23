@@ -17,6 +17,7 @@ RUN apt-get -y update --no-install-recommends \
     dialog \
     git \
     vim \
+    sudo \
     && apt-get autoremove -y \
     && apt-get clean -y
 
