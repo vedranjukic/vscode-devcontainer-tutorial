@@ -34,6 +34,8 @@ RUN apt-get -y update --no-install-recommends \
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
 
+RUN echo "codespace ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/codespace
+
 ENV DEBIAN_FRONTEND=dialog
 
 USER $USERNAME
