@@ -18,6 +18,7 @@ RUN apt-get -y update --no-install-recommends \
     git \
     vim \
     sudo \
+    telnet \
     && apt-get autoremove -y \
     && apt-get clean -y
 
