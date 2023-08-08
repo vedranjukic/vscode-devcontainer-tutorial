@@ -5,5 +5,4 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - before: npm install -g @devcontainers/cli
-  - init: devcontainer up --prebuild --workspace-folder=/workspace/vscode-devcontainer-tutorial
+  - init: npm install -g @devcontainers/cli && devcontainer up --prebuild --workspace-folder=/workspace/vscode-devcontainer-tutorial
